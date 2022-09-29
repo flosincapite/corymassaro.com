@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>
+      {{ site.name }}{% if title %} - {{ title }}{% endif %}
+    </title>
+    <meta
+        name="description" 
+        content="
+          {% if description %}
+            {{ description }}
+          {% else %}
+            {{ site.description }}
+          {% endif %} >
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </nav>
+    <main>
+      {{ content | safe }}
+    </main>
+    <footer>
+      Made by Cory Massaro.
+      Thanks to Genoveva Galarza Heredero.
+      Built with <a href="https://www.11ty.dev">Eleventy</a>.
+    </footer>
+  </body>
+<html>

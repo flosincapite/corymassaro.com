@@ -1,0 +1,23 @@
+{
+  "name": "corymassaro.com",
+  "version": "1.0.0",
+  "description": "My Personal Website/Digital Garden (https://maggieappleton.com/garden-history)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flosincapite/corymassaro.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flosincapite/corymassaro.com/issues"
+  },
+  "homepage": "https://github.com/flosincapite/corymassaro.com#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  }
+}
