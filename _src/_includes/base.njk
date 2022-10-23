@@ -1,8 +1,21 @@
+---
+eleventyComputed:
+  backgroundImage: "/images/snail_shimmer_smooth.gif"
+  borderColor: rgba(255, 100, 255, 1)
+  backgroundColor: rgba(200, 100, 150)
+  shoulderBackground: rgba(255, 255, 255, 0.8)
+---
+
 <html>
   <head>
+    <style>{% include "./_src/css/base.css" | url %}</style>
     <title>
       {{ site.name }}{% if title %} - {{ title }}{% endif %}
     </title>
+    <link
+        rel="icon"
+        type="image/gif"
+        href="/images/alien_gills.gif" />
     <meta
         name="description" 
         content="
@@ -10,22 +23,24 @@
             {{ description }}
           {% else %}
             {{ site.description }}
-          {% endif %} >
+          {% endif %}" >
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about/">About</a></li>
-      </ul>
-    </nav>
-    <main>
-      {{ content | safe }}
-    </main>
-    <footer>
-      Made by Cory Massaro.
-      Thanks to Genoveva Galarza Heredero.
-      Built with <a href="https://www.11ty.dev">Eleventy</a>.
-    </footer>
+    <div class="shoulders">
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+      </nav>
+      <main>
+        {{ content | safe }}
+      </main>
+      <footer>
+        made by Cory Massaro |
+        built with <a href="https://www.11ty.dev">Eleventy</a> |
+        favicon evolved with <a href="https://direct.mit.edu/evco/article-abstract/19/3/373/1371/Picbreeder-A-Case-Study-in-Collaborative?redirectedFrom=fulltext">Pic</a><a href="https://nbenko1.github.io/#/">breeder</a>
+      </footer>
+    </div>
   </body>
 <html>
