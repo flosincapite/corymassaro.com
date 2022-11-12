@@ -1,4 +1,30 @@
 ---
 label: Just a Standard Post
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: main_content
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Main Content
+  description: Main Content of the Post
+- name: modified_date
+  type: datetime
+  label: Modified Date
+  description: Date this post was last modified
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: true
+    export_format: 'Last Pruned: YYYY:MM:DD:h:mm A ZZ'
+  default: now
