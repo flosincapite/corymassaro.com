@@ -10,7 +10,7 @@ sections:
   create: all
   match: "**/*"
   exclude: "**/*.json"
-upload_dir: uploads
+upload_dir: _src/images
 public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: false
