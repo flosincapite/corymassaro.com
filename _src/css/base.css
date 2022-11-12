@@ -1,3 +1,31 @@
+.nav-container {
+  position: relative;
+}
+
+.nav-inner, .nav-border {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+.nav-inner {
+  width: 30%;
+  z-index: 10;
+  margin-left: -15%;
+}
+
+.nav-border {
+  width: 87%;
+  margin-left: -43.5%;
+}
+
+.nav-border .inner {
+  margin-top: 25px;
+  border-bottom: 2px solid {{ borderColor }};
+  z-index: 10;
+}
+
 nav {
   background-color: rgba(100, 100, 200, 1);
 }
@@ -5,6 +33,11 @@ nav {
 nav li {
   display: inline-block;
   text-align: center;
+}
+
+.nav-inner li a {
+  /* background-color: {{ shoulderBackground }}; */
+  background-color: rgba(255, 255, 255, 1);
 }
 
 @keyframes moveimage {
@@ -26,8 +59,23 @@ body {
   margin-bottom: 500px;
   padding: 3%;
   padding-left: 3%;
-  background: {{ shoulderBackground }};
+  /* background: {{ shoulderBackground }}; */
+  background: rgba(255, 255, 255, 1);
   border: 2px solid {{ borderColor }};
+}
+
+.justified-list {
+  text-align: justify;
+}
+
+.justified-list li {
+  display: inline-block;
+}
+
+.justified-list:after {
+  content: '';
+  width: 100%;
+  display: inline-block;
 }
 
 main {

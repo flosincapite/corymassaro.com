@@ -26,13 +26,16 @@ eleventyComputed:
           {% endif %}" >
   </head>
   <body>
-    <div class="shoulders">
-      <nav>
-        <ul>
+    <div class="nav-container">
+      <div class="nav-inner">
+        <ul class="justified-list">
           <li><a href="/">Home</a></li>
           <li><a href="/about/">About</a></li>
         </ul>
-      </nav>
+      </div>
+      <div class="nav-border"><div class="inner" /></div>
+    </div>
+    <div class="shoulders">
       <main>
         {{ content | safe }}
       </main>
