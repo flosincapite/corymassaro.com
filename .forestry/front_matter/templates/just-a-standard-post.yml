@@ -28,3 +28,5 @@ fields:
     display_utc: true
     export_format: 'Last Pruned: YYYY:MM:DD:h:mm A ZZ'
   default: now
+pages:
+- _src/pages/test-document.md
