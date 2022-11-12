@@ -4,7 +4,8 @@
   "description": "My Personal Website/Digital Garden (https://maggieappleton.com/garden-history)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "develop": "npx @11ty/eleventy --serve"
   },
   "repository": {
     "type": "git",
