@@ -1,3 +1,35 @@
+:root {
+	--sans-font: 'Sono', sans-serif;
+	--serif-font: 'Spectral', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--serif-font);
+}
+
+p, body {
+	font-family: var(--sans-font);
+}
+
+p {
+	line-height: 1.4;
+}
+
+::selection { 
+  background-color: {{ borderColor }};
+  color: white; 
+}
+
+a {
+	color: {{ borderColor }};
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 .nav-container {
   position: relative;
 }
@@ -6,18 +38,17 @@
   height: 100%;
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 80%;
 }
 
 .nav-inner {
-  width: 30%;
   z-index: 10;
-  margin-left: -15%;
 }
 
 .nav-border {
-  width: 87%;
-  margin-left: -43.5%;
+	width: 92%;
+	margin-left: -43.5%;
+	left: 47.5%;
 }
 
 .nav-border .inner {
@@ -37,8 +68,17 @@ nav li {
 
 .nav-inner li a {
   /* background-color: {{ shoulderBackground }}; */
-  background-color: rgba(255, 255, 255, 1);
+	background-color: {{ backgroundColor }};
+	padding: 0 10px;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
 }
+
+.nav-inner li a:hover {
+	color: {{ borderColor }};
+}
+
 
 @keyframes moveimage {
   100% { background-position: -40% 80%; }
@@ -46,17 +86,13 @@ nav li {
 
 body {
   background-color: {{ backgroundColor }};
-  background-image: url("{{ backgroundImage }}");
-  background-size: 25%;
-  background-position: 90% 80%; 
-  background-repeat: no-repeat;
   /* animation: moveimage 40s infinite; */
   /* background-position: 135% 100%; */
 }
 
 .shoulders {
   margin: 50px; 
-  margin-bottom: 500px;
+  margin-bottom: 20px;
   padding: 3%;
   padding-left: 3%;
   /* background: {{ shoulderBackground }}; */
@@ -65,24 +101,44 @@ body {
 }
 
 .justified-list {
+	padding: 0;
   text-align: justify;
 }
 
 .justified-list li {
   display: inline-block;
+	margin-right: 20px;
 }
 
-.justified-list:after {
-  content: '';
-  width: 100%;
-  display: inline-block;
+
+hr {
+	border-color: {{ borderColor }};
 }
 
-main {
-  padding-left: 3%;
-  border-bottom: 2px solid {{ borderColor }};
-}
 
 footer {
   font-size-adjust: .4;
+	margin: 50px;
+	text-align: right;
+	color: white;
+	border-top: 2px solid {{ borderColor }};
+	padding-top: 20px;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 0 50px;
+}
+
+header h1 {
+	color: white;
+	font-size: 3.5em;
+	margin: 0;
+}
+
+header img {
+	max-width: 300px;
 }
