@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "develop": "npx @11ty/eleventy --serve"
+    "rebuild": "rm -rf _site && npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve --port 8001",
+    "develop": "npm run rebuild && npm run serve",
+    "deploy": "npm run rebuild && npm run serve"
   },
   "repository": {
     "type": "git",
