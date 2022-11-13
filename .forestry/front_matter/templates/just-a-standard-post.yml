@@ -48,3 +48,4 @@ fields:
   label: Page Type
 pages:
 - _src/pages/about.html
+- _src/pages/workshops.md
