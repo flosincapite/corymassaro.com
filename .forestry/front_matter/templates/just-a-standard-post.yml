@@ -28,3 +28,21 @@ fields:
   config:
     required: false
   label: Permalink
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+  description: Tags for this page
+- name: page_type
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - standard
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Page Type
