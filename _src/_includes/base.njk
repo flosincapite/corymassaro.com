@@ -2,7 +2,7 @@
 eleventyComputed:
   backgroundImage: "/images/snail_shimmer_smooth.gif"
   borderColor: rgba(255, 100, 255, 1)
-  backgroundColor: rgba(200, 100, 150)
+  backgroundColor: rgb(111, 75, 93)
   shoulderBackground: rgba(255, 255, 255, 0.8)
 ---
 
@@ -16,6 +16,9 @@ eleventyComputed:
         rel="icon"
         type="image/gif"
         href="/images/alien_gills.gif" />
+				<link rel="preconnect" href="https://fonts.googleapis.com">
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+				<link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Sono&family=Spectral:wght@600&family=Tinos:wght@700&display=swap" rel="stylesheet">
     <meta
         name="description" 
         content="
@@ -26,24 +29,34 @@ eleventyComputed:
           {% endif %}" >
   </head>
   <body>
-    <div class="nav-container">
+    <header>
+			<div class="title">
+			<h1>{{ title }}</h1>
+			</div>
+			<div class="snail">
+			<img src="{{ backgroundImage }}"/>
+			</div>
+		</header>
+		<div class="nav-container">
       <div class="nav-inner">
         <ul class="justified-list">
           <li><a href="/">Home</a></li>
           <li><a href="/about/">About</a></li>
         </ul>
       </div>
-      <div class="nav-border"><div class="inner" /></div>
+      <div class="nav-border"><div class="inner">
+			</div>
+			</div>
     </div>
     <div class="shoulders">
       <main>
         {{ content | safe }}
       </main>
-      <footer>
-        made by Cory Massaro |
-        built with <a href="https://www.11ty.dev">Eleventy</a> |
-        favicon evolved with <a href="https://direct.mit.edu/evco/article-abstract/19/3/373/1371/Picbreeder-A-Case-Study-in-Collaborative?redirectedFrom=fulltext">Pic</a><a href="https://nbenko1.github.io/#/">breeder</a>
-      </footer>
     </div>
+		<footer>
+			made by Cory Massaro |
+			built with <a href="https://www.11ty.dev">Eleventy</a> |
+			favicon evolved with <a href="https://direct.mit.edu/evco/article-abstract/19/3/373/1371/Picbreeder-A-Case-Study-in-Collaborative?redirectedFrom=fulltext">Pic</a><a href="https://nbenko1.github.io/#/">breeder</a>
+		</footer>
   </body>
 <html>
