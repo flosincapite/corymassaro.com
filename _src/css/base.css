@@ -48,10 +48,10 @@ body {
   background-color: {{ backgroundColor }};
   background-image: url("{{ backgroundImage }}");
   background-size: 25%;
-  /* background-position: 135% 100%; */
   background-position: 90% 80%; 
   background-repeat: no-repeat;
   /* animation: moveimage 40s infinite; */
+  /* background-position: 135% 100%; */
 }
 
 .shoulders {
