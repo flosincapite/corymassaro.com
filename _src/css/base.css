@@ -1,14 +1,14 @@
 :root {
-	--sans-font: 'Sono', sans-serif;
-	--serif-font: 'Spectral', serif;
+	--title-font: 'Tinos', serif;
+	--text-font: 'Philosopher', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: var(--sans-font);
+	font-family: var(--title-font);
 }
 
 p, body {
-	font-family: var(--serif-font);
+	font-family: var(--text-font);
 }
 
 p {
