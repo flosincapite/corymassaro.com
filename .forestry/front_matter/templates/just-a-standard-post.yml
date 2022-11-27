@@ -48,5 +48,4 @@ fields:
   label: Page Type
 pages:
 - _src/pages/about.html
-- _src/pages/nuevapagina.html
 - _src/pages/oracle.html
