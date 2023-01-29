@@ -48,5 +48,6 @@ fields:
   label: Page Type
 pages:
 - _src/pages/about.html
+- _src/pages/contact.html
 - _src/pages/oracle.html
 - _src/pages/publications.html
