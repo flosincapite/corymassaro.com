@@ -146,4 +146,5 @@ header h1 {
 
 header img {
 	max-width: 300px;
+  min-height: 207px;
 }
