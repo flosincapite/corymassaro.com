@@ -6,4 +6,4 @@ title: Contact
 description: contact
 
 ---
-<p>korybant [at] protonmail [dot] com</p>
+korybant \[at\] protonmail \[dot\] com
