@@ -1,5 +1,6 @@
 node_modules/**
 _site/**
+_src/pages/admin/**
 img/**
 
 node_modules
