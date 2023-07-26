@@ -14,10 +14,10 @@ permalink: /publications/
 
 ## Fiction and Poetry
 
-[The Strings](https://www.rattle.com/the-strings-by-cory-massaro/ "the strings")\
+[The Strings](https://www.rattle.com/the-strings-by-cory-massaro/ "the strings") is a poem about string stuff\
 [The Luddite Bestiary](https://thewildword.com/lets-do-luddism/ "luddite bestiary and let's do luddism") is a speculative fiction/poetry series embedded in Let's Do Luddism\
-[Instructions for the Banishment of a Shaidan, or Feral Self-Driving Car](https://thewildword.com/fiction-cory-massaro/ "feral self-driving cars")\
-[Gran Flower](https://www.wrath-bearingtree.com/2023/07/new-fiction-by-cory-massaro-gran-flower/ "gran flower")
+[Instructions for the Banishment of a Shaidan, or Feral Self-Driving Car](https://thewildword.com/fiction-cory-massaro/ "feral self-driving cars") is about what to do if your car gets a ghost in it 😯\
+[Gran Flower](https://www.wrath-bearingtree.com/2023/07/new-fiction-by-cory-massaro-gran-flower/ "gran flower") is about cybernetic elders
 
 ## Nonfiction
 
