@@ -7,7 +7,7 @@ page_type: standard
 permalink: /about/
 ---
 
-<p>My name is Cory Massaro. I write speculative fiction in both prose and verse. I grew up in the working-class exurbs of Ohio, U.S.A., and am currently at home in Quito, Ecuador. I hold a B.A. in creative writing and classics from Duke University as well as M.A.s in comparative literature and computational linguistics. I love to learn new languages and find ways to speak them!</p>
+<p>My name is Cory Massaro. I write speculative fiction in both prose and verse. I grew up in Ohio, U.S.A., in a working-class Rust Belt town; I am currently at home in Quito, Ecuador. I hold a B.A. in creative writing and classics from Duke University as well as M.A.s in comparative literature and computational linguistics. I love to learn new languages and find ways to speak them!</p>
 
 <p>I am <i><a href="https://thewildword.com">The Wild Word</a></i>'s associate editor and fiction editor. Since October 2021, I've been producing a column there called <i><a href="https://thewildword.com/lets-do-luddism/">Let's Do Luddism</a></i>, as well as an ongoing flash fiction/poetry series, <i>The Luddite Bestiary</i>. The former is broadly techno-pessimistic; the latter treats technology through imaginative genres like speculative evolution.</p>
 
