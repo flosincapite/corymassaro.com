@@ -4,7 +4,13 @@
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
-    width: 35%;
+    height: 20%;
+}
+
+.sidebar-div {
+    display: grid;
+    place-items: right;
+    height: 100%
 }
 
 .centered-div {
@@ -15,6 +21,7 @@
 
 body {
     background: url('{{ backgroundImage }}') no-repeat center center fixed;
-    background-size: cover;
     height: 100%;
+    background-size: auto 120%;
+    background-color: white;
 }
