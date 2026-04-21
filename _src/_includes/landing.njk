@@ -1,0 +1,30 @@
+---
+eleventyComputed:
+  backgroundImage: "/images/wall_with_margin.JPG"
+  foregroundImage: "/images/sigils.apng"
+---
+
+<!--
+TODO: deduplicate <title> and other
+shared elements with base.njk;
+abstract shared stuff out into
+basebasebase
+-->
+<html>
+  <head>
+    <style>{% include "./_src/css/base.css" | url %}</style>
+    <style>{% include "./_src/css/layout.css" | url %}</style>
+    <title>
+      {{ site.name }}{% if title %} - {{ title }}{% endif %}
+    </title>
+    <link
+        rel="icon"
+        type="image/png"
+        href="/images/POINT.png" />
+  </head>
+  <body>
+    <div class="centered-div">
+        <img src="{{ foregroundImage }}" class="centered-image">
+    </div>
+  </body>
+</html>
