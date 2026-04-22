@@ -1,7 +1,7 @@
 :root {
 	--title-font: 'Tinos', serif;
 	--text-font: 'Philosopher', sans-serif;
-  --code-font: 'Sono', monospace;
+    --code-font: 'Sono', monospace;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -13,7 +13,7 @@ p, body {
 }
 
 code {
-  font-family: var(--code-font);
+    font-family: var(--code-font);
 }
 
 p {
@@ -21,8 +21,8 @@ p {
 }
 
 ::selection { 
-  background-color: {{ borderColor }};
-  color: white; 
+    background-color: {{ borderColor }};
+    color: white; 
 }
 
 a {
@@ -36,18 +36,18 @@ a:hover {
 }
 
 .nav-container {
-  position: relative;
+    position: relative;
 }
 
 .nav-inner, .nav-border {
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 5%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 5%;
 }
 
 .nav-inner {
-  z-index: 10;
+    z-index: 10;
 }
 
 .nav-border {
@@ -57,22 +57,21 @@ a:hover {
 }
 
 .nav-border .inner {
-  margin-top: 25px;
-  border-bottom: 2px solid {{ borderColor }};
-  z-index: 10;
+    margin-top: 25px;
+    border-bottom: 2px solid {{ borderColor }};
+    z-index: 10;
 }
 
 nav {
-  background-color: rgba(100, 100, 200, 1);
+    background-color: rgba(100, 100, 200, 1);
 }
 
 nav li {
-  display: inline-block;
-  text-align: center;
+    display: inline-block;
+    text-align: center;
 }
 
 .nav-inner li a {
-  /* background-color: {{ shoulderBackground }}; */
 	background-color: {{ backgroundColor }};
 	padding: 0 10px;
 	color: white;
@@ -84,34 +83,31 @@ nav li {
 	color: {{ borderColor }};
 }
 
-
-@keyframes moveimage {
-  100% { background-position: -40% 80%; }
-}
-
 body {
-  background-color: {{ backgroundColor }};
-  /* animation: moveimage 40s infinite; */
-  /* background-position: 135% 100%; */
+    background-color: {{ backgroundColor }};
+    /* background-color: white; */
+    /* background: url('{{ backgroundImage }}') no-repeat center center fixed; */
+    height: 100%;
+    background-size: auto 120%;
 }
 
 .shoulders {
-  margin: 50px; 
-  margin-bottom: 20px;
-  padding: 3%;
-  padding-left: 3%;
-  /* background: {{ shoulderBackground }}; */
-  background: rgba(255, 255, 255, 1);
-  border: 2px solid {{ borderColor }};
+    margin: 50px; 
+    margin-bottom: 20px;
+    padding: 3%;
+    padding-left: 3%;
+    /* background: {{ shoulderBackground }}; */
+    background: rgba(255, 255, 255, 1);
+    border: 2px solid {{ borderColor }};
 }
 
 .justified-list {
 	padding: 0;
-  text-align: justify;
+    text-align: justify;
 }
 
 .justified-list li {
-  display: inline-block;
+    display: inline-block;
 	margin-right: 20px;
 }
 
@@ -122,7 +118,7 @@ hr {
 
 
 footer {
-  font-size-adjust: .4;
+    font-size-adjust: .4;
 	margin: 50px;
 	text-align: right;
 	color: white;
@@ -146,5 +142,5 @@ header h1 {
 
 header img {
 	max-width: 300px;
-  min-height: 207px;
+    min-height: 207px;
 }
