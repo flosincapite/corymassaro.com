@@ -1,6 +1,6 @@
 ---
-permalink: /landing
+permalink: /
 layout: landing
-title: Landing Page
+title: Home
 ---
 

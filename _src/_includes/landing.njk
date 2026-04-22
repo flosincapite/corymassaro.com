@@ -21,17 +21,20 @@ basebasebase
         rel="icon"
         type="image/png"
         href="/images/POINT.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Sono&family=Spectral:wght@600&family=Tinos:wght@700&family=Alegreya+Sans&family=Laila&family=Philosopher&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="centered-div">
-        <img src="{{ foregroundImage }}" class="centered-image">
-        <!--
-        <div class="sidebar-div">
-            <a href="/">
-                <img src="/images/POINT.png">home
-            </a>
-        </div>
-        -->
+    <a href="/">
+        <img src="{{ foregroundImage }}" class="centered-floating">
+    </a>
+    <div class="under-center">
+        <a href="/">home</a> | 
+        <a href="/about">about</a> | 
+        <a href="/publications">publications</a> | 
+        <a href="/workshops">workshops</a> | 
+        <a href="/contact">contact</a>
     </div>
   </body>
 </html>
