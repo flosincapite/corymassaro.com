@@ -84,21 +84,20 @@ nav li {
 }
 
 body {
-    background-color: {{ backgroundColor }};
-    /* background-color: white; */
-    /* background: url('{{ backgroundImage }}') no-repeat center center fixed; */
+    /* background-color: {{ backgroundColor }}; */
+    background-color: white;
+    background: url('{{ backgroundImage }}') no-repeat center center fixed;
     height: 100%;
     background-size: auto 120%;
 }
 
 .shoulders {
-    margin: 50px; 
-    margin-bottom: 20px;
+    margin: 50px;
+    margin-bottom: 20%;
+    width: 100%;
     padding: 3%;
     padding-left: 3%;
-    /* background: {{ shoulderBackground }}; */
-    background: rgba(255, 255, 255, 1);
-    border: 2px solid {{ borderColor }};
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .justified-list {
