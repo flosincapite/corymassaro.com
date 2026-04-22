@@ -1,22 +1,17 @@
-.centered-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+.centered-floating {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     height: 20%;
 }
 
-.sidebar-div {
-    display: grid;
-    place-items: right;
-    height: 100%
-}
-
-.centered-div {
-    display: grid;
-    place-items: center;
-    height: 100%;
+.under-center {
+    position: fixed;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 20%;
 }
 
 body {
