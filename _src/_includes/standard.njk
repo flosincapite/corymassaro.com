@@ -2,40 +2,51 @@
 layout: base
 eleventyComputed:
   snailImage: "/images/snail_shimmer_crown.gif"
-  borderColor: rgba(255, 100, 255, 1)
+  oldBorderColor: rgba(255, 100, 255, 1)
+  borderColor: rgba(120, 0, 120, 1)
   backgroundColor: rgb(100, 80, 93)
   shoulderBackground: rgba(255, 255, 255, 0.8)
 ---
-    <header>
-			<div class="title">
-			<h1>{{ title }}</h1>
-			</div>
-			<div class="snail">
-			<img src="{{ snailImage }}"/>
-			</div>
-		</header>
-		<div class="nav-container">
-      <div class="nav-inner">
-        <ul class="justified-list">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about/">About</a></li>
-          <li><a href="/publications/">Publications</a></li>
-          <li><a href="/workshops/">Workshops</a></li>
-          <li><a href="/experimental-art/">Toys</a></li>
-          <li><a href="/contact/">Contact</a></li>
-        </ul>
-      </div>
-      <div class="nav-border"><div class="inner">
-			</div>
-			</div>
+<header>
+    <div class="title">
+        <h1>{{ title }}</h1>
     </div>
-    <div class="shoulders">
-      <main>
+</header>
+<div class="shoulders">
+    <!--
+    <div class="nav-container">
+        <div class="nav-inner">
+            <ul class="justified-list">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/publications/">Publications</a></li>
+                <li><a href="/workshops/">Workshops</a></li>
+                <li><a href="/experimental-art/">Toys</a></li>
+                <li><a href="/contact/">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-border">
+            <div class="inner">
+            </div>
+        </div>
+    </div>
+    -->
+    <div class="nav-container-2">
+        <a href="/">Home</a> | 
+        <a href="/about">About</a> | 
+        <a href="/publications">Publications</a> | 
+        <a href="/workshops">Workshops</a> | 
+        <a href="/contact">Contact</a>
+    </div>
+    <main>
         {{ content | safe }}
-      </main>
-    </div>
-		<footer>
-			made by Cory Massaro | snailed by Cory Massaro<br>
-			built with <a href="https://www.11ty.dev">Eleventy</a> | <a href="https://flask.palletsprojects.com/en/2.2.x/">Flask</a> | <a href="https://tina.io">Tina CMS</a><br>
-			favicon evolved with <a href="https://direct.mit.edu/evco/article-abstract/19/3/373/1371/Picbreeder-A-Case-Study-in-Collaborative?redirectedFrom=fulltext">Pic</a><a href="https://nbenko1.github.io/#/">breeder</a>
-		</footer>
+    </main>
+    <footer>
+        made by Cory Massaro | snailed by Cory Massaro<br>
+        built with <a href="https://www.11ty.dev">Eleventy</a> | <a href="https://flask.palletsprojects.com/en/2.2.x/">Flask</a> | <a href="https://tina.io">Tina CMS</a><br>
+        favicon evolved with <a href="https://direct.mit.edu/evco/article-abstract/19/3/373/1371/Picbreeder-A-Case-Study-in-Collaborative?redirectedFrom=fulltext">Pic</a><a href="https://nbenko1.github.io/#/">breeder</a><br>
+        <div class="snail">
+            <img src="{{ snailImage }}"/>
+        </div>
+    </footer>
+</div>
