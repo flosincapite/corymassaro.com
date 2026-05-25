@@ -30,7 +30,9 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./_src/images/");
     // TODO: Parameterize these links elsewhere so they can be used in
     // templates instead of having to declare them everywhere.
-    eleventyConfig.addFilter("getRandomPage", function() {
+    // TODO: This is a horrible hack; there should just be a way to call a 
+    // 0-ary function?
+    eleventyConfig.addFilter("getRandomPage", function( _unused ) {
         const endpoints = [
             "/about/",
             "/publications/",

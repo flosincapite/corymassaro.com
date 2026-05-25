@@ -2,10 +2,16 @@
 	--title-font: 'Tinos', serif;
 	--text-font: 'Philosopher', sans-serif;
     --code-font: 'Sono', monospace;
+    font-size-adjust: 0.7;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: var(--title-font);
+    text-align: center;
+}
+
+h2 {
+    margin: 2em;
 }
 
 p, body {
@@ -17,7 +23,7 @@ code {
 }
 
 p {
-	line-height: 1.4;
+	line-height: 1.8;
 }
 
 ::selection { 
@@ -97,12 +103,35 @@ nav li {
     height: 20%;
 }
 
-.under-center {
+html {
+    --top-spacing: 100px;
+    scroll-padding-top: var(--top-spacing);
+}
+
+header {
     position: fixed;
-    top: 78%;
+    display: flex;
+    z-index: 1;
+}
+
+.header-image {
+    position: fixed;
+    height: 100%;
+    z-index: 500;
+}
+
+.landing-nav {
+    position: fixed;
+    top: 27%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 20%;
+    color: white;
+    z-index: 1000;
+}
+
+.landing-nav a {
+    color: white;
 }
 
 body {
@@ -111,13 +140,18 @@ body {
     background: url('{{ backgroundImage }}') no-repeat center center fixed;
     height: 100%;
     background-size: auto 120%;
+    --top-spacing: 100px;
+    scroll-padding-top: var(--top-spacing);
 }
 
 .shoulders {
+    z-index: 0;
+    margin-top: var(--top-spacing);
     margin-bottom: 20%;
-    width: 100%;
-    padding: 3%;
-    padding-left: 3%;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 4em;
     background: rgba(255, 255, 255, 0.5);
     /* background: rgba(200, 200, 200, 0.5); */
 }
@@ -146,6 +180,7 @@ footer {
 	padding-top: 20px;
 }
 
+/*
 header {
 	display: flex;
 	flex-direction: row;
@@ -153,11 +188,19 @@ header {
 	align-items: flex-end;
 	padding: 0 50px;
 }
+*/
 
 header h1 {
-	color: white;
+    position: fixed;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 	font-size: 3.5em;
-	margin: 0;
+    color: white;
+	font-family: var(--title-font);
+    text-align: center;
+    z-index: 1000;
+	/* margin: 0; */
 }
 
 footer img {
