@@ -1,13 +1,18 @@
 ---
 eleventyComputed:
-  headerImage: "/images/wall-plants-with-transparency.png"
+  headerImageOld: "/images/wall-plants-with-transparency.png"
+  headerImageOld2: "/images/wall-plants-only.png"
   backgroundImage: "/images/wall.JPG"
   borderColor: rgba(120, 0, 120, 1)
 ---
 
 <html>
   <head>
-    <style>{% include "./_src/css/base.css" | url %}</style>
+    <style>
+        {% include "./_src/css/base.css" | url %}
+        {% block extraStyles %}
+        {% endblock %}
+    </style>
     <title>
       {{ site.name }}{% if title %} - {{ title }}{% endif %}
     </title>
@@ -28,10 +33,9 @@ eleventyComputed:
           {% endif %}" >
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   </head>
-  <header>
+  <header class="fixed">
     <h1>{{ title }}</h1>
-    <img class="header-image">{{ headerImage }}</img>
-    <div class="landing-nav">
+    <div class="navbar">
       <a href="/">home</a> | 
       <a href="/about">about</a> | 
       <a href="/publications">publications</a> | 
@@ -40,6 +44,7 @@ eleventyComputed:
     </div>
   </header>
   <body>
-    {{ content | safe }}
+    {% block content %}
+    {% endblock %}
   </body>
 <html>

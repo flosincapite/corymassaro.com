@@ -1,8 +1,12 @@
+/**
+ * General text styling.
+ */
+
 :root {
 	--title-font: 'Tinos', serif;
 	--text-font: 'Philosopher', sans-serif;
     --code-font: 'Sono', monospace;
-    font-size-adjust: 0.7;
+    font-size-adjust: 0.55;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -23,7 +27,7 @@ code {
 }
 
 p {
-	line-height: 1.8;
+	line-height: 1.3;
 }
 
 ::selection { 
@@ -41,86 +45,24 @@ a:hover {
 	text-decoration: underline;
 }
 
-.nav-container {
-    position: relative;
-}
-
-.nav-container-2 {
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.nav-inner, .nav-border {
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 5%;
-}
-
-.nav-inner {
-    z-index: 10;
-}
-
-.nav-border {
-	width: 92%;
-	margin-left: -43.5%;
-	left: 47.5%;
-}
-
-.nav-border .inner {
-    margin-top: 25px;
-    border-bottom: 2px solid {{ borderColor }};
-    z-index: 10;
-}
-
-nav {
-    background-color: rgba(100, 100, 200, 1);
-}
-
-nav li {
-    display: inline-block;
-    text-align: center;
-}
-
-.nav-inner li a {
-	background-color: {{ backgroundColor }};
-	padding: 0 10px;
-	color: white;
-	text-decoration: none;
-	font-weight: bold;
-}
-
-.nav-inner li a:hover {
-	color: {{ borderColor }};
-}
-
-.centered-floating {
+/**
+ * Header.
+ */
+header.fixed {
+    margin: 0;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 20%;
+    font-size-adjust: 0.7;
+}
+
+header .headimage {
+    position: fixed;
+    z-index: 1;
     height: 20%;
 }
 
-html {
-    --top-spacing: 100px;
-    scroll-padding-top: var(--top-spacing);
-}
-
-header {
-    position: fixed;
-    display: flex;
-    z-index: 1;
-}
-
-.header-image {
-    position: fixed;
-    height: 100%;
-    z-index: 500;
-}
-
-.landing-nav {
+header .navbar {
     position: fixed;
     top: 27%;
     left: 50%;
@@ -130,65 +72,14 @@ header {
     z-index: 1000;
 }
 
-.landing-nav a {
+header .navbar a {
     color: white;
+	font-weight: normal;
 }
 
-body {
-    /* background-color: {{ backgroundColor }}; */
-    background-color: white;
-    background: url('{{ backgroundImage }}') no-repeat center center fixed;
-    height: 100%;
-    background-size: auto 120%;
-    --top-spacing: 100px;
-    scroll-padding-top: var(--top-spacing);
+header .navbar a:hover {
+	text-decoration: underline;
 }
-
-.shoulders {
-    z-index: 0;
-    margin-top: var(--top-spacing);
-    margin-bottom: 20%;
-    width: 80%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 4em;
-    background: rgba(255, 255, 255, 0.5);
-    /* background: rgba(200, 200, 200, 0.5); */
-}
-
-.justified-list {
-	padding: 0;
-    text-align: justify;
-}
-
-.justified-list li {
-    display: inline-block;
-	margin-right: 20px;
-}
-
-
-hr {
-	border-color: {{ borderColor }};
-}
-
-footer {
-    font-size-adjust: .4;
-	margin: 50px;
-	text-align: right;
-	color: white;
-	border-top: 2px solid {{ borderColor }};
-	padding-top: 20px;
-}
-
-/*
-header {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: flex-end;
-	padding: 0 50px;
-}
-*/
 
 header h1 {
     position: fixed;
@@ -199,11 +90,5 @@ header h1 {
     color: white;
 	font-family: var(--title-font);
     text-align: center;
-    z-index: 1000;
-	/* margin: 0; */
-}
-
-footer img {
-	max-width: 300px;
-    min-height: 207px;
+    z-index: 2;
 }

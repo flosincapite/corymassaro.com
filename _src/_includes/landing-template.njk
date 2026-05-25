@@ -1,0 +1,12 @@
+{% extends 'base-template.njk' %}
+
+{% block extraStyles %}
+{% include "./_src/css/landing.css" | url %}
+{% endblock %}
+
+{% block content %}
+<!-- TODO: how to make this randomize statically? <a href="{{ title | getRandomPage }}"> -->
+<a href="/contact/">
+    <img src="{{ foregroundImage }}" class="centered-floating">
+</a>
+{% endblock %}

@@ -1,0 +1,31 @@
+header {
+    background: url('{{ headerImage }}') no-repeat center;
+    background-size: 100% auto;
+    margin: -5px -5px -5px -5px;
+    /* background: orange; */
+}
+
+header.fixed {
+    margin: -10px;
+}
+
+body {
+    background: url('{{ backgroundImage }}') repeat center center fixed;
+    background-color: white;
+    background-size: auto 50%;
+    --top-spacing: 22%;
+}
+
+.spacer {
+    height: var(--top-spacing);
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.shoulders {
+    scroll-padding-top: var(--top-spacing);
+    width: 60%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 4em;
+    background: rgba(255, 255, 255, 0.5);
+}

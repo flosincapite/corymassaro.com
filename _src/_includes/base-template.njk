@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <style>
+        {% include "./_src/css/base.css" | url %}
+        {% block extraStyles %}
+        {% endblock %}
+    </style>
+    <title>
+      {{ site.name }}{% if title %} - {{ title }}{% endif %}
+    </title>
+    <link
+        rel="icon"
+        type="image/gif"
+        href="/images/POINT.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Sono&family=Spectral:wght@600&family=Tinos:wght@700&family=Alegreya+Sans&family=Laila&family=Philosopher&display=swap" rel="stylesheet">
+    <meta
+        name="description" 
+        content="
+          {% if description %}
+            {{ description }}
+          {% else %}
+            {{ site.description }}
+          {% endif %}" >
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  </head>
+  <header class="fixed">
+    <h1>{{ title }}</h1>
+    <div class="navbar">
+      <a href="/">home</a> | 
+      <a href="/about">about</a> | 
+      <a href="/publications">publications</a> | 
+      <a href="/workshops">workshops</a> | 
+      <a href="/contact">contact</a>
+    </div>
+  </header>
+  <body>
+    {% block content %}
+    {% endblock %}
+  </body>
+<html>
