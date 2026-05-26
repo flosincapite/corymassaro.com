@@ -28,4 +28,13 @@ body {
     padding-right: 20%;
     padding-top: 4em;
     background: rgba(255, 255, 255, 0.5);
+    padding-bottom: 10%
+}
+
+.contactImage {
+    position: fixed;
+    height: auto;
+}
+
+.sigil1 {
 }
