@@ -1,6 +1,6 @@
 ---
-title: Toys for Experimental Art
-date_modified: '2023-03-19T05:00:00.000Z'
+title: Experimental Tools
+date_modified: '2026-05-26T16:24:41.413'
 description: list of toys for experimental art
 permalink: /experimental-art/
 tags:
