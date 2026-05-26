@@ -34,7 +34,7 @@ For these workshops, I created large text corpora in a number of languages, acco
 
 [The oracle](/oracle/ "the language garbage oracle") sees words and concepts as many-dimensional vectors. This means it can move between words by gradually moving along these vectors, in many directions at once, from its many-faceted vision of one word to that of another word. In the workshop, we played with different starting and ending points, having the oracle recite lists of words to us as it encountered them in its passage. When the oracle would complete one of its word-trails, we would use the listed words in order as the seed of a poem or story.
 
-We also explored the oracle's analogical powers. We could click on one of the words it had given us, and the oracle would tell us a few other words it thought were similar. From there, too, we could derive creative insight: [why is "lemon" like "catfish"](https://korybant.com/oracle/synonyms/en_combined/lemon "really though, why")?
+We also explored the oracle's analogical powers. We could click on one of the words it had given us, and the oracle would tell us a few other words it thought were similar. From there, too, we could derive creative insight: [why is "lemon" like "catfish"](https://ehscatology.com/oracle/synonyms/en_combined/lemon "really though, why")?
 
 <div style="text-align:center;">* * *</div>
 
