@@ -22,9 +22,13 @@ permalink: /publications/
 
 [Gran Flower](https://www.wrath-bearingtree.com/2023/07/new-fiction-by-cory-massaro-gran-flower/ "gran flower") is about cybernetic elders
 
+## Blog/Essays
+
+[My Substack](https://substack.com/@corymassaro) is currently a sustained complaint about large language models
+
 ## Nonfiction
 
-[Let's Do Luddism](https://thewildword.com/lets-do-luddism/ "") is a monthly column about technology, politics, and social justice
+[Let's Do Luddism](https://thewildword.com/lets-do-luddism/ "") is a (defunct) monthly column about technology, politics, and social justice
 
 ## Academic Writing
 
