@@ -4,9 +4,18 @@
 
 :root {
 	--title-font: 'Tinos', serif;
-	--text-font: 'Philosopher', sans-serif;
+	--text-font: 'ElMessiri', sans-serif;
     --code-font: 'Sono', monospace;
     font-size-adjust: 0.55;
+}
+
+/* el-messiri-regular - latin, arabic */
+@font-face {
+    font-display: swap;
+    font-family: 'ElMessiri';
+    font-style: normal;
+    font-weight: 400;
+    src: url({{ philosopherFont }}) format('woff');
 }
 
 h1, h2, h3, h4, h5, h6 {

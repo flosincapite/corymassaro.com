@@ -28,6 +28,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
     eleventyConfig.addPassthroughCopy("./_src/css/");
     eleventyConfig.addPassthroughCopy("./_src/images/");
+    eleventyConfig.addPassthroughCopy("./_src/fonts/");
     // TODO: Parameterize these links elsewhere so they can be used in
     // templates instead of having to declare them everywhere.
     // TODO: This is a horrible hack; there should just be a way to call a 
