@@ -1,0 +1,17 @@
+:root {
+	--title-font: 'Tinos', serif;
+	--text-font: 'Philosopher', sans-serif;
+    --code-font: 'Sono', monospace;
+    font-size-adjust: 0.55;
+}
+
+/* philosopher-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'ElMessiri';
+    font-style: normal;
+    font-weight: 400;
+    /* src: url({{ philosopherFont }}) format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    /* src: url('/fonts/philosopher-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    /* font-face documentation: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face */
+}
