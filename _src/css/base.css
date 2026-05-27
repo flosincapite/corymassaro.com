@@ -86,12 +86,11 @@ header .headimage {
 }
 
 header .navbar {
-    position: fixed;
-    top: 27%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    top: 4%;
     height: 20%;
     color: white;
+    text-align: center;
     z-index: 1000;
 }
 
@@ -105,10 +104,8 @@ header .navbar a:hover {
 }
 
 header h1 {
-    position: fixed;
-    top: 7%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    top: 2%;
 	font-size: 3.5em;
     color: white;
 	font-family: var(--title-font);
