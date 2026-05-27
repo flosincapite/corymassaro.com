@@ -3,7 +3,7 @@
  */
 
 :root {
-	--title-font: 'Tinos', serif;
+	--title-font: 'Exo2', serif;
 	--text-font: 'ElMessiri', sans-serif;
     --code-font: 'Sono', monospace;
     font-size-adjust: 0.55;
@@ -16,6 +16,15 @@
     font-style: normal;
     font-weight: 400;
     src: url({{ philosopherFont }}) format('woff');
+}
+
+/* exo-2 regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Exo2';
+    font-style: normal;
+    font-weight: 400;
+    src: url({{ exoFont }}) format('woff');
 }
 
 h1, h2, h3, h4, h5, h6 {
