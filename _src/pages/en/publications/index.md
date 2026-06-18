@@ -24,7 +24,13 @@ permalink: /publications/
 
 ## Blog/Essays
 
-[My Substack](https://substack.com/@corymassaro) is currently a sustained complaint about large language models
+[The Cacoethics of Tech](https://www.ciol.org.uk/cacoethics-tech) discusses the willful evil of techno-capitalists
+
+[We Can Be Luddites](https://substack.com/@corymassaro) is currently a sustained complaint about large language models
+
+* [Feedrus](https://corymassaro.substack.com/p/feedrus): on things that speak but do not feel
+* [LLMs Can't Teach You Shit](https://corymassaro.substack.com/p/llms-cant-teach-you-shit): on artificial intelligence, real stupidity, and chess
+* [Sexbots All the Way Down](https://corymassaro.substack.com/p/sexbots-all-the-way-down): on Jude Law and the eternal quest for a sexbot
 
 ## Nonfiction
 
