@@ -24,8 +24,8 @@
   "homepage": "https://github.com/flosincapite/corymassaro.com#readme",
   "dependencies": {
     "@11ty/eleventy": "3.0.0",
-    "@11ty/eleventy-img": "6.0.4",
-    "@tinacms/cli": "^2.4.0",
-    "tinacms": "^3.8.2"
+    "@11ty/eleventy-img": "^7.1.1",
+    "@tinacms/cli": "^4.0.3",
+    "tinacms": "^1.2.1"
   }
 }
