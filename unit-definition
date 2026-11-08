@@ -1,0 +1,16 @@
+[Unit]
+Description=corymassaro.com website
+
+[Service]
+Type=simple
+ExecStart=/home/cory/.nodenv/bin/nodenv exec npm run deploy
+WorkingDirectory=/home/cory/corymassaro.com/
+LimitNOFILE=4096
+IgnoreSIGPIPE=false
+KillMode=process
+User=cory
+
+[Install]
+WantedBy=multi-user.target
+
+# /etc/systemd/system/corymassaro-com.service
