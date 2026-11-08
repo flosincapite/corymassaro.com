@@ -1,5 +1,9 @@
 {
   "name": "corymassaro.com",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=24.x.x"
+  },
   "version": "1.0.0",
   "description": "My Personal Website/Digital Garden (https://maggieappleton.com/garden-history)",
   "main": "index.js",
@@ -23,9 +27,7 @@
   },
   "homepage": "https://github.com/flosincapite/corymassaro.com#readme",
   "dependencies": {
-    "@11ty/eleventy": "3.0.0",
-    "@11ty/eleventy-img": "^7.1.1",
-    "@tinacms/cli": "^4.0.3",
-    "tinacms": "^1.2.1"
+    "@11ty/eleventy": "^3.1.8",
+    "@11ty/eleventy-img": "^7.1.1"
   }
 }
